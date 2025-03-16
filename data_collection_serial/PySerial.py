@@ -93,20 +93,31 @@ def configureArduino():
 
 # ---- CALLBACKS UPON MESSAGES -----
 
-timestamps = []
+timestamps   = []
 temperatures = []
-capacitives = []
+capacitives  = []
+
+def printDataPoints():
+    for index in range(len(timestamps)):
+        print(f"Data Point #{index}:")
+        print("Time: " + time.asctime(time.localtime(timestamps[index])))
+        print("Temperature: " + temperatures[index])
+        print("Capacitive: " + capacitives[index])
 
 def handleLocalMessage(lMessage):
-    if lMessage.upper() == "REQUEST":
+    if lMessage.upper() == "RETRIEVE":
         arduino.write(lMessage.encode('utf-8'))
         arduino.write(bytes('\n', encoding='utf-8'))
+    elif lMessage.upper() == "PRINT":
+        printDataPoints()
     elif lMessage.upper() == "EXPORT":
         readableTimestamps = timestamps
         map(time.asctime, readableTimestamps)
         dict = {"timestamp": readableTimestamps, "temperature": temperatures, "capacitive": capacitives}
         df = pandas.DataFrame(data=dict)
         df.to_csv("sensorData.csv", header=False, index=False)
+    elif lMessage.upper() == "END":
+        exit()
     else:
         print("Unknown message.")
 
