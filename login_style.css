@@ -1,7 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    border: 1px solid #ffffff;
+    border: 1px solid #fff;
 }
 
 .glass-container::before {
@@ -100,12 +100,13 @@ button {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 15px;
+    width: 250px;
 }
 
 button:hover {
     background: transparent;
-    color: rgb(0, 0, 0);
-    outline: 1px solid #000000;
+    color: #4db769;
+    outline: 1px solid #4db769;
 }
 
 p {
