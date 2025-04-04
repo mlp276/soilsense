@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class GetsensordataConfig(AppConfig):
+class DataCollectionConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'getsensordata'
+    name = 'data_collection'
