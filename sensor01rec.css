@@ -69,7 +69,7 @@ ul li a:hover{
     color: #4db769;
 }
 
-/*change float to right here if search box is overlapping menu*/
+/*change float to right if search box is overlapping menu*/
 .search{
     width: 330px;
     float: right;
@@ -130,7 +130,32 @@ ul li a:hover{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-@media (max-width: 915px) {
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+td {
+    text-align: left;
+    padding: 15px;
+}
+
+th{
+    text-align: center;
+    padding: 15px;
+    background-color:#4db769
+}
+
+tr:nth-child(even) {background-color: #ffffff;}
+tr:nth-child(odd) {background-color: #e7e7e7;}
+tr:hover {background-color: #4db769;}
+
+
+@media (max-width: 500px) {
     .main{
         width: 400%;
     }

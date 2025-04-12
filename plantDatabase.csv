@@ -1,0 +1,22 @@
+,Jersey-Friendly Yards Plant Database,,,,,,,,,,
+#,Name,Common Name,Type,New Jersey Native,Soil Type,Soil Moisture,Soil pH,Drought Tolerance,Optimal Light,Light Range,Hardiness Zone
+1,Pycnanthemum tenuifolium,Narrowleaf Mountain mint,Flower_Perennial,Yes,Clay,Dry_Moist,Acidic_SlightlyAcidic,High,FullSun,FullSun_PartialShade,6a_6b_7a_7b
+2,Achillea spp.,Yarrow,Flower_Perennial,No,Loam_Organic_Sandy,Dry,Acidic_SlightlyAcidic_Neutral,High,FullSun,FullSun_PartialShade,6a_6b_7a_7b
+3,Aesculus flava,Yellow Buckeye,Tree,Yes,Loam_Organic_Sandy,Dry_Moist,Acidic_SlightlyAcidic_Neutral_SlightlyAlkaline,Low,FullSun,FullSun_PartialShade,6a_6b_7a_7b
+4,Begonia cultivars,Begonia,Flower_Annual,No,Loam_Organic_Sandy,Dry_Moist,Acidic_SlightlyAcidic_Neutral,Medium,PartialShade,FullSun_PartialShade_Shade,6a_6b_7a_7b
+5,Brassica oleracea,Ornamental Cabbage,Flower_Annual,No,Loam_Organic,Moist_Wet,Slightly Acidic_Neutral_SlightlyAlkaline,None,FullSun,FullSun,6a_6b_7a_7b
+6,Dryopteris cristata,Crested Woodfern,Fern,Yes,Loam_Organic_Clay,Moist_Wet,Acidic_SlightlyAcidic,Low,Shade,PartialShade_Shade,6a_6b_7a_7b
+7,Eubotrys racemosa,Sweetbells,Shrub,Yes,Loam_Organic_Sandy_Clay,Moist_Wet,Acidic_SlightlyAcidic,None,PartialShade,FullSun_PartialShade,6a_6b_7a_7b
+8,Gaylussacia baccata,Black Huckleberry,Shrub,Yes,Loam_Organic_Sandy_Clay,Dry,Acidic_SlightlyAcidic,Medium,FullSun,FullSun_PartialShade,6a_6b_7a_7b
+9,Geranium maculatum,Spotted Geranium,Flower_Perennial,Yes,Loam_Organic_Sandy,Dry_Moist,Slightly Acidic_Neutral_SlightlyAlkaline,Medium,PartialShade,FullSun_PartialShade,6a_6b_7a_7b
+10,Muhlenbergia lindheimeri,Lindheimer’s Muhly,Grass,No,Loam_Organic_Clay,Dry,Neutral_SlightlyAlkaline_Alkaline,Medium,FullSun,FullSun,6a_6b_7a_7b
+11,Schizachyrium scoparium,Little Bluestem,Grass_Groundcover,Yes,Loam_Organic_Sandy_Clay,Dry,Acidic_SlightlyAcidic_Neutral_SlightlyAlkaline_Alkaline,High,FullSun,FullSun,6a_6b_7a_7b
+12,Scirpus cyperinus,Woolgrass,Grass_Groundcover,Yes,Loam_Organic_Sandy_Clay,Moist_Wet,Acidic_SlightlyAcidic_Neutral,Low,FullSun,FullSun,6a_6b_7a_7b
+13,Syringa reticulata,Japanese Tree Lilac,Tree,No,Loam_Organic_Sandy_Clay,Dry,SlightlyAcidic_Neutral,Medium,FullSun,FullSun_PartialShade,6a_6b_7a_7b
+14,Thalictrum pubescens,King of the Meadow,Flower_Perennial,Yes,Loam_Organic,Moist,Acidic_SlightlyAcidic,Low,PartialShade,PartialShade_Shade,6a_6b_7a_7b
+15,Thuja occidentalis,Arborvitae,Tree,Yes,"Loam, Organic, Sandy, Clay",Dry,Acidic_SlightlyAcidic_Neutral,Low,FullSun,FullSun_PartialShade,6a_6b_7a_7b
+16,Tilia americana,American Basswood,Tree,Yes,Loam_Organic_Sandy,Dry_Moist,Acidic_SlightlyAcidic_Neutral,Low,FullSun,FullSun_PartialShade,6a_6b_7a_7b
+17,Vaccinium angustifolium,Lowbush Blueberry,Shrub,Yes,Loam_Sandy,Dry,Acidic_Slightly Acidic_Neutral_SlightlyAlkaline,Medium,FullSun,FullSun_PartialShade,6a_6b_7a_7b
+18,Vernonia noveboracensis,New York Ironweed,Flower_Perennial,Yes,Loam_Organic_Sandy_Clay,Dry_Moist,SlightlyAcidic_Neutral,Low,FullSun,FullSun,6a_6b_7a_7b
+19,Viburnum dentatum,Arrowwood,Shrub,Yes,Loam_Organic_Sandy,Dry_Moist,Acidic_SlightlyAcidic,Medium,PartialShade,FullSun_PartialShade,6a_6b_7a_7b
+20,Zinnia spp.,Zinnia,Flower_Annual,No,Loam_Organic_Sandy,Dry,SlightlyAcidic_Neutral,Low,FullSun,FullSun,6a_6b_7a_7b
