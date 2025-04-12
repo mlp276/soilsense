@@ -1,8 +1,8 @@
 from django.urls import path
 
-from . import views
+from . import parse_requests
 
 urlpatterns = [
-    path("get/", views.get_sensor_data, name="getsensordata"),
-    path("post/", views.post_sensor_data, name="postsensordata")
+    path("get/", parse_requests.get_sensor_data, name="getsensordata"),
+    path("post/", parse_requests.post_sensor_data, name="postsensordata")
 ]
