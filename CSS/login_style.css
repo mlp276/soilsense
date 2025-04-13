@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('floral.jpg');
+    background-image: url('/Images/floral.jpg');
     background-size: cover;
 }
 
