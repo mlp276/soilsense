@@ -8,7 +8,7 @@
 
 .main{
     width: 100%;
-    background-image: url('/Images/garden.jpg');
+    background-image: url('garden.jpg');
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: overlay;
@@ -129,79 +129,50 @@ ul li a:hover{
     outline: none;
 }
 
-.content{
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    color: #000000;
-    position: relative;
-}
-
-.content .par{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-    font-size: 20px;
-}
-
-.content h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}
-
-.content .cn{
-    width: 160px;
-    height: 40px;
-    background: #4db769;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
-    
-}
-
-.content .cn a{
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
-}
-
-.cn:hover{
-    background-color: #fff;
-}
-
-.content span{
-    color: #4db769;
-    font-size: 65px
-}
-
 ::placeholder{
     color: #000000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.form .link{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
+.container{
+	width: 500px;
+	padding: 30px;
+	margin-left: 425px;
+	margin-top: 100px;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: center;
 }
-.form .link a{
-    text-decoration: none;
-    color: #ff7200;
+h4{
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: rgb(0, 0, 0);
 }
-.liw{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-align: center;
+input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+textarea{
+	width: 100%;
+	padding: 10px;
+}
+#submit{
+	background: #4db769;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+#submit:hover{
+    background: transparent;
+    color: rgb(0, 0, 0);
+    outline: 1px solid #000000;
 }
 
 @media (max-width: 915px) {

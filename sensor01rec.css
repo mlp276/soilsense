@@ -1,14 +1,10 @@
 *{
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
-
 .main{
     width: 100%;
-    background-image: url('/Images/garden.jpg');
+    background-image: url('garden.jpg');
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: overlay;
@@ -73,7 +69,7 @@ ul li a:hover{
     color: #4db769;
 }
 
-/*change float to right here if search box is overlapping menu*/
+/*change float to right if search box is overlapping menu*/
 .search{
     width: 330px;
     float: right;
@@ -104,7 +100,7 @@ ul li a:hover{
     background: #4db769;
     border: 2px solid #4db769;
     margin-top: 27px;
-    color: #ffffff;
+    color: #fff;
     font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-bottom-right-radius: 5px;
@@ -134,48 +130,32 @@ ul li a:hover{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.container{
-	width: 500px;
-	padding: 30px;
-	margin-left: 425px;
-	margin-top: 100px;
-	border: 1px solid #eeeeee;
-	border-radius: 10px;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: center;
-}
-h4{
-	margin-bottom: 10px;
-	font-size: 24px;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	color: rgb(0, 0, 0);
-}
-input{
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 10px;
-}
-textarea{
-	width: 100%;
-	padding: 10px;
-}
-#submit{
-	background: #4db769;
-    color: black;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 15px;
-}
-#submit:hover{
-    background: transparent;
-    color: rgb(0, 0, 0);
-    outline: 1px solid #000000;
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+td {
+    text-align: left;
+    padding: 15px;
 }
 
-@media (max-width: 915px) {
+th{
+    text-align: center;
+    padding: 15px;
+    background-color:#4db769
+}
+
+tr:nth-child(even) {background-color: #ffffff;}
+tr:nth-child(odd) {background-color: #e7e7e7;}
+tr:hover {background-color: #4db769;}
+
+
+@media (max-width: 500px) {
     .main{
         width: 400%;
     }
