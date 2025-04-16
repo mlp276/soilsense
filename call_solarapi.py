@@ -6,7 +6,7 @@ import os
 SOLAR_API_ENDPOINT = "https://solar.googleapis.com/v1/dataLayers:get"
 
 # Get the API key from environment variable
-API_KEY = "AIzaSyCSYtncO_P9nxZM8RGvf1a_L6nvhXdDmQ8"
+API_KEY = "ENTER_API_KEY"
 
 if not API_KEY:
     print("Error: API key not found. Please set the environment variable.")
