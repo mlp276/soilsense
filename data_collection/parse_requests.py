@@ -1,14 +1,47 @@
 from . import models
-
-from datetime import datetime
-import requests
+import pandas as pd
 import json
+from datetime import datetime
+from . import process_data
+from django.db.models import Avg
+
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from django.http import JsonResponse
 
 def get_sensor_data(request):
-    return HttpResponse('hello!')
+    if request.method == 'GET':
+        sensor_ip = request.GET.get('sensor_ip', default='')
+
+        print(sensor_ip)
+
+        if len(sensor_ip) == 0:
+            return HttpResponse('INVALID QUERY')
+        
+        sensor_id = models.Sensor.objects.get(sensor_ip=sensor_ip).id
+        sensor_requests = models.Sensor_Request.objects.filter(sensor_id=sensor_id)
+        
+        time_executed_array = []
+        temperatures = []
+        capacitives = []
+
+        for sensor_request in sensor_requests:
+            sensor_request_id = sensor_request.id
+            datapoints = models.Sensor_Datapoints.objects.filter(sensor_request_id=sensor_request_id)
+            
+            time_executed = sensor_request.time_executed.isoformat()
+            avg_temperature = datapoints.aggregate(Avg("temperature"))['temperature__avg']
+            avg_capacitive = datapoints.aggregate(Avg("capacitive"))['capacitive__avg']
+
+            time_executed_array.append(time_executed)
+            temperatures.append(avg_temperature)
+            capacitives.append(avg_capacitive)
+
+        df = pd.DataFrame(data={'Time Collected': time_executed, 'Temperature': temperatures, 'Capacitive': capacitives})
+        processed_sensordata = process_data.processData(df=df).to_dict(orient='list')
+
+        return JsonResponse(processed_sensordata)
+    return HttpResponse('NOT GET')
 
 @csrf_exempt
 def post_sensor_data(request):
