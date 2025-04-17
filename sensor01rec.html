@@ -4,6 +4,15 @@
 <head>
   <meta name=""viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sensor01rec.css">
+  <script type="text/javascript">
+
+    function fn1()
+    {
+        var select = document.getElementById("selectbox");
+        alert(select.options[select.selectedIndex].value)
+    }
+
+    </script>
 </head>
 
 <body>
@@ -33,6 +42,13 @@
 
       </div>
       
+      <select id="selectbox">
+        <option value="Sensor 1">Sensor 1</option>
+        <option value="Sensor 2">Sensor 2</option>
+        <option value="Sensor 3">Sensor 3</option>
+      </select>
+      <button onclick="fn1()">Enter</button>
+
       <table border="1" class="dataframe">
         <thead>
           <tr style="text-align: right;">

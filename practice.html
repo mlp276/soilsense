@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>DOM manipulations</title>
+        <script type="text/javascript">
+
+        function fn1()
+        {
+            var select = document.getElementById("selectbox");
+            alert(select.options[select.selectedIndex].value)
+        }
+
+        </script>
+    </head>
+    <body>
+        <select id="selectbox">
+            <option value="Sensor 01">Sensor 01</option>
+            <option value="Sensor 02">Sensor 02</option>
+            <option value="Sensor 03">Sensor 03</option>
+        </select>
+        <button onclick="fn1()">Enter</button>
+    </body>
+</html>
