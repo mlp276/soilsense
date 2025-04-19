@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name=""viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sensor01rec.css">
+  <script type="text/javascript">
+
+    function fn1()
+    {
+        var select = document.getElementById("selectbox");
+        alert(select.options[select.selectedIndex].value)
+    }
+
+    </script>
+</head>
+
+<body>
+
+  <div class="main">
+      
+      <div class="navbar">
+          <div class="icon">
+              <h2 class="logo">SoilSense</h2>
+          </div>
+
+          <div class="menu">
+              <ul>
+                  <li><a href="home_page.html">HOME</a></li>
+                  <li><a href="#">SOIL MOISTURE MAP</a></li>
+                  <li><a href="sunlight_map.html">SUNLIGHT MAP</a></li>
+                  <li><a href="sensor01rec.html">RECOMMENDATIONS</a></li>
+                  <li><a href="comments.html">CONTACT</a></li>
+                      
+              </ul>
+          </div>
+
+          <div class="search">
+              <input class="srch" type="search" name="" placeholder="Questions?">
+              <a href="#"> <button class="btn">Search</button></a>
+          </div>
+
+      </div>
+      
+      <select id="selectbox">
+        <option value="Sensor 1">Sensor 1</option>
+        <option value="Sensor 2">Sensor 2</option>
+        <option value="Sensor 3">Sensor 3</option>
+      </select>
+      <button onclick="fn1()">Enter</button>
+
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>Time in Millisecond Since UTC Epoch</th>
+            <th>Temperature in Celsius</th>
+            <th>Capacitive Reading</th>
+            <th>Soil Moisture</th>
+            <th>Plant Recommendations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>1.741394e+09</td>
+            <td>29.1</td>
+            <td>362</td>
+            <td>Dry</td>
+            <td>Yarrow Black Huckleberry Lindheimer’s Muhly Little Bluestem Japanese Tree Lilac Arborvitae Lowbush Blueberry Zinnia</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>1.741394e+09</td>
+            <td>29.0</td>
+            <td>361</td>
+            <td>Dry</td>
+            <td>Yarrow Black Huckleberry Lindheimer’s Muhly Little Bluestem Japanese Tree Lilac Arborvitae Lowbush Blueberry Zinnia</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>1.741394e+09</td>
+            <td>29.1</td>
+            <td>361</td>
+            <td>Dry</td>
+            <td>Yarrow Black Huckleberry Lindheimer’s Muhly Little Bluestem Japanese Tree Lilac Arborvitae Lowbush Blueberry Zinnia</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>1.741394e+09</td>
+            <td>29.3</td>
+            <td>361</td>
+            <td>Dry</td>
+            <td>Yarrow Black Huckleberry Lindheimer’s Muhly Little Bluestem Japanese Tree Lilac Arborvitae Lowbush Blueberry Zinnia</td>
+          </tr>
+        </tbody>
+      </table>
+
+  </div>
+</body>
+</html>

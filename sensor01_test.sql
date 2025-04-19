@@ -1,0 +1,1 @@
+SELECT * FROM `soil-sensor-data`.sensor01_test;
