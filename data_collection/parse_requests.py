@@ -13,8 +13,6 @@ def get_sensor_data(request):
     if request.method == 'GET':
         sensor_ip = request.GET.get('sensor_ip', default='')
 
-        print(sensor_ip)
-
         if len(sensor_ip) == 0:
             return HttpResponse('INVALID QUERY')
         
